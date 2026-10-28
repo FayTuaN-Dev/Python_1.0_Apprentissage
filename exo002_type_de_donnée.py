@@ -2,7 +2,7 @@
 ## Exo002 Manipulation des variable et leur type de données
 
 
-nom = "Dev"
+nom = "FayTuaN"
 
 age = 31
 

@@ -111,3 +111,20 @@ Exemple pour Python:
 - git diff commit1 commit2 // Compare deux commits de l'historique local
 
 
+
+**Flux complet avec une branche:**
+
+git switch -c nomdelabranch                  1. Créer la branche et s'y placer
+
+  ... écrire le code ...
+
+  git add .                                     2. Préparer les fichiers
+  git commit -m "Ajout exo002 : types de données"   3. Enregistrer l'étape
+
+  git switch main                               4. Retourner sur main
+  git merge nomdelabranch                      5. Fusionner la branche dans main
+  git push origin main                          6. Envoyer main sur GitHub
+
+  git branch -d type-de-donnee                  7. Supprimer la branche en local
+  git push origin --delete type-de-donnee       8. Supprimer la branche sur GitHub (seulement si elle y a été
+  envoyée)
